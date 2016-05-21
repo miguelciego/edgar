@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/foto"
+        android:src="@mipmap/ic_logocps"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ninja"
+        android:textSize="@dimen/large"
+        android:textStyle="bold"
+        android:id="@+id/titulo"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/foto"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/foto" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ninja"
+        android:textSize="@dimen/medium"
+        android:textStyle="bold"
+        android:id="@+id/subtitulo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/foto"
+        android:layout_below="@+id/titulo"
+        android:layout_alignBottom="@+id/foto"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignWithParentIfMissing="false" />
+
+</RelativeLayout>
